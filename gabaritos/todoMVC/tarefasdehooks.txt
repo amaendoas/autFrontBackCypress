@@ -1,0 +1,15 @@
+Tarefa - Identificar Uso de Hooks:
+
+Imagine os seguintes cenários para uma loja virtual:
+A. Testar a adição de 3 produtos diferentes ao carrinho e verificar o subtotal.
+B. Testar a remoção de um item do carrinho.
+C. Testar a alteração da quantidade de um item no carrinho.
+D. Testar a finalização da compra com um cupom de desconto.
+E. Testar a visualização de um pedido no histórico após a compra.
+Crie uma estrutura de describe, context e it (apenas os nomes, sem o código Cypress interno) para esses cenários.
+Desafio: Onde você usaria before, beforeEach, afterEach, ou after? Justifique sua escolha em termos de pré-condições e limpeza para as regras de negócio envolvidas. (Ex: before para login do usuário, beforeEach para garantir que o carrinho esteja vazio antes de testar a adição, ou tenha itens para testar remoção/alteração).
+Tarefa - Nomeando Regras de Negócio:
+
+Visite o site https://the-internet.herokuapp.com/login.
+Identifique pelo menos 5 regras de negócio relacionadas ao processo de login (sucesso, falha com usuário inválido, falha com senha inválida, mensagens de erro, etc.).
+Escreva apenas os it blocks (ex: it('RN-LOGIN-001: Deve permitir login com credenciais válidas e redirecionar para a área segura', () => {});) para essas regras, agrupando-os sob um describe e context apropriados.

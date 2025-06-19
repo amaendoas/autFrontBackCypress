@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ginásio de Captura de Elementos</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .container { padding: 15px; border: 1px solid #ccc; margin-bottom: 10px; }
+        .btn { padding: 8px 12px; border-radius: 4px; cursor: pointer; }
+        .btn-primary { background-color: #007bff; color: white; border: 1px solid #007bff; }
+        .btn-secondary { background-color: #6c757d; color: white; border: 1px solid #6c757d; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="password"] {
+            width: 200px; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd;
+        }
+        #mensagem-feedback { margin-top: 10px; color: green; }
+    </style>
+</head>
+<body>
+    <h1>Ginásio de Captura de Elementos</h1>
+
+    <div class="container" id="secao-login">
+        <h2>Login</h2>
+        <label for="username">Treinador:</label>
+        <input type="text" id="username" name="username" data-cy="input-username">
+
+        <label for="password">Pin:</label>
+        <input type="password" id="password" name="password" data-cy="input-password">
+
+        <button class="btn btn-primary" data-cy="botao-login">Entrar</button>
+        <button class="btn btn-secondary" data-cy="botao-limpar">Limpar Campos</button>
+    </div>
+
+    <div class="container" id="secao-info">
+        <h2>Informações</h2>
+        <p>Bem-vindo à nossa Arena*!</p>
+        <p class="texto-destaque">Automação é incrível.</p>
+        <ul>
+            <li>Item 1 - Pikachu</li>
+            <li>Item 2 - Bubasauro</li>
+            <li class="item-especial">Item Especial - Pokebola</li>
+        </ul>
+    </div>
+
+    <div id="mensagem-feedback"></div>
+
+    <script>
+        // Simples interação para termos algo para testar depois
+        document.querySelector('[data-cy="botao-login"]').addEventListener('click', () => {
+            const user = document.getElementById('username').value;
+            if (user) {
+                document.getElementById('mensagem-feedback').textContent = 'Login de ' + user + ' efetuado com sucesso!';
+            } else {
+                document.getElementById('mensagem-feedback').textContent = 'Por favor, informe o usuário.';
+            }
+        });
+        document.querySelector('[data-cy="botao-limpar"]').addEventListener('click', () => {
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('mensagem-feedback').textContent = '';
+        });
+    </script>
+</body>
+</html>
