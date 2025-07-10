@@ -1,0 +1,36 @@
+
+Página Sistema de Aprovação de Crédito
+--------------------------
+1. Cenário: Campos "Nome", "E-mail", "Renda", "CPF" e "Valor de Crédito" são obrigatórios.
+
+ID: RF01
+Título: Validar preenchimento de todos os campos obrigatórios
+Objetivo: Validar que uma solicitação só deve ocorrer quando os campos "Nome", "E-mail", "Renda", "CPF" e "Valor de Crédito" forem preenchidos.
+Pré-condições:
+- Acessar ao sistema;
+- Permissão de solicitação;
+- Estar em homolog: https://angelofdiasg.tech/qaprogramador/sacfunc/;
+Passos:
+1. Preencher os campo "Nome"
+2. Preencher os campo "E-mail",
+3. Preencher os campo "Renda",
+4. Preencher os campo "CPF",
+5. Preencher os campo "Valor de Crédito",
+6. Clicar no botão "Solicitar crédito"
+Resultado esperado:
+Que o sistema faça a solicitação.
+Resultado obtido (pós teste)
+
+ID: RF02
+Título: Validar se os campos estão obrigatórios
+Objetivo: Validar que uma solicitação só deve ocorrer quando os campos "Nome", "E-mail", "Renda", "CPF" e "Valor de Crédito" forem preenchidos.
+Pré-condições:
+- Acessar ao sistema;
+- Permissão de solicitação;
+- Estar em homolog: https://angelofdiasg.tech/qaprogramador/sacfunc/;
+Passos:
+1. Não preencher nenhum campo;
+Resultado esperado:
+Que o sistema não faça a solicitação.
+Resultado obtido (pós teste)
+
